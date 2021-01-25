@@ -4,13 +4,11 @@ import { questionPropsType } from './../Types/quiz_types'
 const QuestionCard: React.FC<questionPropsType> = ({ question, option, callback ,num,steps,colorr}) => {
 
     let [selectedAns, setSelectedAns] = useState("");
-    let [correct,setcorrect]=useState(false)
+   
 
     const handleSelection = (ev: any) => {
         setSelectedAns(ev.target.value);
-        if(colorr==selectedAns){
-            setcorrect(true)
-        }
+      
     }
 
     return (
@@ -48,7 +46,7 @@ const QuestionCard: React.FC<questionPropsType> = ({ question, option, callback 
                 }
 
              
-                <input  type="submit" className="submit" value={!((steps+1)==num ) ? "NEXTQUESTION" : "SUBMIT"}/>
+                <input  type="submit" className="submit" value={!((steps+1)===num ) ? "NEXTQUESTION" : "SUBMIT"}/>
             </form>
         </div>
     )
