@@ -72,8 +72,8 @@ function App() {
       <h1>Quiz App</h1>
       
         <h2>Result</h2>
-        <p className="result-text">
-          You final score is 
+        <p className="result-text1">
+          Your final score is 
             <b> {score}</b> out of <b>{quiz.length}</b>  
             <br/> 
             <button onClick={fetchagain} className='play'>Try Again</button>
@@ -90,9 +90,9 @@ function App() {
     else
     return(
     <div className="App">
-    <h1>Quiz App</h1>
+    <h1 className="result-title">Quiz App</h1>
       <p className="result-text">
-        You current score is 
+        Your current score is 
           <b> {score}</b> out of <b>{quiz.length}</b>   
        
       </p>
