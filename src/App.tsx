@@ -115,7 +115,7 @@ function App() {
     <div className='quiz-container'>
     <h1 >Quiz Application</h1>
     <div >
-        <h2>Test Yourself</h2>
+        <h2>Test Your Knowledge</h2>
         <div >
             <label >Select a dificult level</label>
             <select name='difficulty-level' onChange={handleDifficulty} required>
